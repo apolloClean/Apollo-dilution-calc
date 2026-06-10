@@ -1,0 +1,26 @@
+{
+  "name": "Apollo Dilution Calculator",
+  "short_name": "Apollo Dilution",
+  "description": "Professional dilution calculator for Apollo Cleaning Solutions products",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1B2F5E",
+  "theme_color": "#1B2F5E",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "utilities"],
+  "lang": "en"
+}
