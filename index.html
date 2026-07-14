@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apollo Professional Cleaning Systems · Dilution Calculator</title>
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Apollo Dilution">
+<meta name="theme-color" content="#0B1E42">
+<meta name="description" content="Apollo Professional Cleaning Systems: professional dilution calculator. Exact concentrate dosing, cost savings, and mixing labels for hotels, restaurants, gyms and cleaning companies.">
+<meta property="og:title" content="Apollo Dilution Calculator">
+<meta property="og:description" content="Professional concentrate dosing tool: exact amounts, cost per litre, and printable mixing labels.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;900&display=swap');
+
+:root {
+  --navy:     #0B1E42;
+  --navy-2:   #122A57;
+  --navy-3:   #1B2F5E;
+  --gold:     #F4A223;
+  --gold-dk:  #C9820F;
+  --white:    #FFFFFF;
+  --bg:       #EEF0F3;
+  --surface:  #FFFFFF;
+  --text:     #14192B;
+  --sub:      #58607A;
+  --muted:    #8A91A8;
+  --line:     #D8DCE4;
+  --line-2:   #C2C7D2;
+  --green:    #1D6840;
+  --amber:    #B47A0B;
+  --red:      #A93226;
+  --r:        2px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: 'Source Sans 3', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 48px;
+}
+
+/* ============ HEADER ============ */
+.header { background: var(--navy); border-bottom: 3px solid var(--gold); }
+.header-top {
+  max-width: 520px; margin: 0 auto;
+  padding: 18px 20px 16px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.header-logo { height: 44px; width: auto; display: block; }
+
+.lang-toggle {
+  display: inline-flex; flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: var(--r); overflow: hidden;
+}
+.lang-toggle button {
+  padding: 7px 13px; font-size: 11px; font-weight: 600;
+  letter-spacing: 1px; border: none;
+  background: transparent; color: rgba(255,255,255,0.45);
+  cursor: pointer; font-family: inherit;
+  transition: background 0.15s, color 0.15s;
+}
+.lang-toggle button + button { border-left: 1px solid rgba(255,255,255,0.25); }
+.lang-toggle button.active { background: var(--gold); color: var(--navy); }
+
+.header-banner {
+  background: var(--navy-2);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.header-banner-inner {
+  max-width: 520px; margin: 0 auto;
+  padding: 9px 20px;
+  display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+}
+.header-banner-text {
+  font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 2px;
+  color: #FFFFFF; white-space: nowrap;
+}
+.header-banner-sub {
+  font-size: 9px; font-weight: 500;
+  color: rgba(255,255,255,0.5); letter-spacing: 1px;
+  text-transform: uppercase; white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis;
+}
+
+/* ============ TRANSITIONS ============ */
+.card, .answer-card, .savings-story, .coverage-card,
+.ppe-card, .water-note, .label-gen-card, .shake-card,
+.rtu-card, .docs-bar, .whatsapp-btn, .actions,
+#modeSection, #containerSection, #answerCard,
+#costSection, #coverageSection, #ppeSection,
+#waterSection, #labelSection, #shakeSection, #docsSection {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.section-fade-enter { opacity: 0; transform: translateY(8px); }
+
+/* ============ CONTENT ============ */
+.content { padding: 22px 16px; max-width: 520px; margin: 0 auto; }
+
+/* ============ SECTION HEADER ============ */
+.section-head {
+  display: flex; align-items: baseline; gap: 10px;
+  margin: 26px 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line-2);
+}
+.section-num {
+  font-size: 10px; font-weight: 700;
+  color: var(--gold-dk); letter-spacing: 0.5px;
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0; min-width: 20px;
+}
+.section-title {
+  font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1.8px;
+  color: var(--navy);
+}
+
+/* ============ CARD ============ */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+
+/* ============ PRODUCT LIST ============ */
+.product-list { display: flex; flex-direction: column; }
+.product-btn {
+  width: 100%; padding: 13px 16px 13px 13px;
+  background: var(--surface); border: none;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid var(--line);
+  font-family: inherit;
+  font-size: 13px; font-weight: 600; color: var(--text);
+  cursor: pointer; text-align: left;
+  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.product-btn:last-child { border-bottom: none; }
+.product-btn:hover:not(.active) { background: #F6F7F9; }
+.product-btn.active {
+  background: var(--navy);
+  border-left-color: var(--gold);
+  color: #FFFFFF;
+}
+.product-btn.active .use-case-tag { color: rgba(255,255,255,0.55); }
+.use-case-tag {
+  font-size: 10.5px; font-weight: 400;
+  color: var(--muted); margin-top: 3px;
+  letter-spacing: 0.2px;
+}
+
+/* ============ MODE BUTTONS ============ */
+.mode-row { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+.mode-btn {
+  padding: 13px 6px;
+  background: var(--surface); border: none;
+  border-right: 1px solid var(--line);
+  border-top: 3px solid transparent;
+  font-family: inherit;
+  font-size: 12.5px; font-weight: 600; color: var(--sub);
+  cursor: pointer; text-align: center;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  line-height: 1.4;
+}
+.mode-btn:last-child { border-right: none; }
+.mode-btn:hover:not(.active) { background: #F6F7F9; }
+.ratio {
+  display: block; font-size: 11px; font-weight: 500;
+  color: var(--muted); margin-top: 2px;
+  font-variant-numeric: tabular-nums;
+}
+.mode-btn.active {
+  background: var(--navy); color: #FFFFFF;
+  border-top-color: var(--gold);
+}
+.mode-btn.active .ratio { color: var(--gold); }
+
+/* ============ CONTAINER ============ */
+.container-wrap { padding: 14px 16px; }
+.preset-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+.preset-btn {
+  padding: 7px 13px;
+  border: 1px solid var(--line-2); border-radius: var(--r);
+  background: var(--surface); font-family: inherit;
+  font-size: 12px; font-weight: 600; color: var(--sub);
+  cursor: pointer; transition: all 0.12s;
+  font-variant-numeric: tabular-nums;
+}
+.preset-btn:hover { border-color: var(--navy); color: var(--navy); }
+.preset-btn.active { border-color: var(--navy); background: var(--navy); color: #fff; }
+.custom-row { display: flex; align-items: stretch; }
+.custom-row input {
+  flex: 1; padding: 10px 12px;
+  border: 1px solid var(--line-2); border-right: none;
+  border-radius: var(--r) 0 0 var(--r);
+  font-size: 15px; font-family: inherit; font-weight: 600;
+  color: var(--text); background: var(--surface);
+  appearance: none; -webkit-appearance: none;
+  transition: border-color 0.15s;
+  font-variant-numeric: tabular-nums;
+}
+.custom-row input:focus { outline: none; border-color: var(--navy); }
+.custom-row .unit {
+  font-size: 12px; font-weight: 700; color: var(--sub);
+  letter-spacing: 0.5px;
+  background: var(--bg); padding: 10px 16px;
+  border: 1px solid var(--line-2);
+  border-radius: 0 var(--r) var(--r) 0;
+  display: flex; align-items: center;
+}
+
+/* ============ ANSWER CARD ============ */
+.answer-card {
+  background: var(--navy);
+  border-radius: var(--r);
+  border-top: 3px solid var(--gold);
+  overflow: hidden;
+}
+.answer-top {
+  padding: 22px 20px 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; gap: 20px;
+}
+.answer-amount { flex-shrink: 0; }
+.answer-eyebrow {
+  font-size: 9px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 2px;
+  color: var(--gold); margin-bottom: 5px;
+}
+.answer-value {
+  font-size: 54px; font-weight: 900;
+  color: #FFFFFF; line-height: 1;
+  letter-spacing: -1.5px;
+  font-variant-numeric: tabular-nums;
+  transition: opacity 0.15s ease;
+}
+.answer-unit {
+  font-size: 19px; font-weight: 500;
+  color: rgba(255,255,255,0.55); margin-left: 4px;
+}
+.answer-divider-v {
+  width: 1px; background: rgba(255,255,255,0.12);
+  align-self: stretch; flex-shrink: 0;
+}
+.answer-context { flex: 1; }
+.answer-context-line {
+  font-size: 12.5px; color: rgba(255,255,255,0.75);
+  line-height: 1.55; font-weight: 400;
+}
+.answer-context-line strong { color: var(--gold); font-weight: 700; }
+
+.answer-bottom { padding: 16px 20px 18px; }
+.answer-steps { display: flex; flex-direction: column; gap: 10px; }
+.answer-step { display: flex; gap: 12px; align-items: flex-start; }
+.step-num {
+  font-size: 10px; font-weight: 700; color: var(--gold);
+  width: 16px; flex-shrink: 0; padding-top: 3px;
+  font-variant-numeric: tabular-nums;
+}
+.step-text {
+  font-size: 13px; font-weight: 400;
+  color: rgba(255,255,255,0.8); line-height: 1.55;
+}
+.step-text strong { color: #FFFFFF; font-weight: 700; font-variant-numeric: tabular-nums; }
+.ready-badge {
+  margin-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding-top: 13px;
+  font-size: 9.5px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 2.2px;
+  color: rgba(255,255,255,0.45);
+}
+
+/* ============ SAVINGS ============ */
+.savings-story {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r); overflow: hidden;
+}
+.savings-cpl-row {
+  display: grid; grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid var(--line);
+}
+.savings-cpl { padding: 16px 14px; text-align: center; }
+.savings-cpl.apollo { background: #F7F4EC; border-right: 1px solid var(--line); border-top: 2px solid var(--gold); }
+.savings-cpl.rtu { background: var(--surface); }
+.savings-cpl-label {
+  font-size: 9px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; color: var(--sub); margin-bottom: 7px;
+}
+.savings-cpl-value {
+  font-size: 23px; font-weight: 900; line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.savings-cpl.apollo .savings-cpl-value { color: var(--navy); }
+.savings-cpl.rtu .savings-cpl-value { color: var(--muted); text-decoration: line-through; }
+.savings-cpl-sub { font-size: 10px; color: var(--muted); margin-top: 4px; }
+.savings-pct-row {
+  padding: 15px 16px; display: flex;
+  align-items: center; justify-content: space-between;
+}
+.savings-pct-label { font-size: 12px; font-weight: 600; color: var(--text); }
+.savings-pct-value {
+  font-size: 28px; font-weight: 900; color: var(--green);
+  letter-spacing: -0.5px; font-variant-numeric: tabular-nums;
+}
+.savings-pct-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+/* ============ COVERAGE ============ */
+.coverage-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 14px 16px;
+}
+.coverage-title {
+  font-size: 9px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; color: var(--muted); margin-bottom: 4px;
+}
+.coverage-value {
+  font-size: 16px; font-weight: 700; color: var(--navy); line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+.coverage-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+/* ============ PPE ============ */
+.ppe-card {
+  border-radius: var(--r);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--amber);
+  background: var(--surface);
+  padding: 12px 14px;
+  font-size: 12px; font-weight: 400;
+  color: var(--text); line-height: 1.6;
+}
+.ppe-card.safe { border-left-color: var(--green); color: var(--sub); }
+.ppe-card.warning { border-left-color: var(--amber); }
+.ppe-card.danger { border-left-color: var(--red); }
+.ppe-label {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: #fff; padding: 2px 7px; border-radius: var(--r);
+  margin-right: 7px; vertical-align: middle;
+  display: inline-block;
+}
+.ppe-label.safe-label { background: var(--green); }
+.ppe-label.warning-label { background: var(--amber); }
+.ppe-label.danger-label { background: var(--red); }
+
+/* ============ RTU ============ */
+.rtu-card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  border-radius: var(--r); padding: 22px 20px;
+  text-align: center;
+}
+.rtu-label {
+  font-size: 9px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.8px; color: var(--gold-dk); margin-bottom: 7px;
+}
+.rtu-value { font-size: 14px; font-weight: 500; color: var(--text); }
+
+/* ============ ACTIONS ============ */
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 22px; }
+.btn {
+  padding: 13px; border-radius: var(--r);
+  font-family: inherit; font-size: 11px;
+  font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px;
+  cursor: pointer; border: none;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  transition: opacity 0.15s;
+}
+.btn:hover { opacity: 0.9; }
+.btn:active { transform: scale(0.98); }
+.btn-share { background: var(--navy); color: #fff; }
+.btn-print { background: var(--surface); color: var(--navy); border: 1px solid var(--line-2); }
+
+/* ============ DOCS ============ */
+.docs-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px; }
+.doc-btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--r); text-decoration: none;
+  font-family: inherit;
+  font-size: 10.5px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1.1px;
+  color: var(--navy); transition: all 0.15s;
+}
+.doc-btn:hover { border-color: var(--navy); background: #F6F7F9; }
+.doc-btn svg { flex-shrink: 0; }
+
+/* ============ SHAKE ============ */
+.shake-card {
+  background: var(--navy);
+  border-radius: var(--r);
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+.shake-label {
+  font-size: 9px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.8px; color: rgba(255,255,255,0.45); margin-bottom: 8px;
+}
+.shake-btn-text { font-size: 13px; font-weight: 700; color: var(--gold); }
+.shake-progress-wrap {
+  height: 3px; background: rgba(255,255,255,0.12);
+  margin-top: 12px; overflow: hidden;
+  display: none;
+}
+.shake-progress-bar {
+  height: 100%; background: var(--gold); width: 0%;
+  transition: width 0.1s linear;
+}
+.shake-done {
+  font-size: 11px; font-weight: 700;
+  color: var(--gold); margin-top: 9px; display: none;
+  text-transform: uppercase; letter-spacing: 1.5px;
+}
+
+/* ============ WHATSAPP ============ */
+.whatsapp-btn {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 14px 16px; margin-top: 8px;
+  background: #1FAF54; border-radius: var(--r);
+  text-decoration: none; border: none; cursor: pointer;
+  font-family: inherit;
+  font-size: 12px; font-weight: 700; letter-spacing: 0.3px; color: #fff;
+  transition: opacity 0.15s; width: 100%;
+}
+.whatsapp-btn:hover { opacity: 0.92; }
+
+/* ============ WATER NOTE ============ */
+.water-note {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--navy);
+  border-radius: var(--r);
+  padding: 12px 14px;
+  font-size: 12px; color: var(--sub); line-height: 1.6;
+}
+.water-note-title {
+  font-size: 9px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--navy); margin-bottom: 4px;
+}
+
+/* ============ LABEL GENERATOR ============ */
+.label-gen-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  overflow: hidden;
+}
+.label-preview {
+  margin: 14px;
+  border: 1.5px solid var(--navy);
+  border-radius: var(--r);
+  overflow: hidden;
+}
+.label-top {
+  background: var(--navy);
+  padding: 8px 12px;
+  border-bottom: 2px solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.label-brand {
+  font-size: 10px; font-weight: 900;
+  letter-spacing: 3px; text-transform: uppercase;
+  color: #FFFFFF;
+}
+.label-ratio-badge {
+  font-size: 10px; font-weight: 900;
+  color: var(--navy); background: var(--gold);
+  padding: 2px 8px; border-radius: var(--r);
+  letter-spacing: 0.5px;
+  font-variant-numeric: tabular-nums;
+}
+.label-body {
+  padding: 11px 12px; background: var(--surface);
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 9px;
+}
+.label-field-name {
+  font-size: 8px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1.2px;
+  color: var(--muted); margin-bottom: 2px;
+}
+.label-field-value {
+  font-size: 12px; font-weight: 700; color: var(--navy);
+  font-variant-numeric: tabular-nums;
+}
+.label-footer {
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  padding: 6px 12px;
+  font-size: 9px; font-weight: 500;
+  color: var(--muted); letter-spacing: 0.5px;
+  display: flex; justify-content: space-between;
+}
+.label-print-btn {
+  margin: 0 14px 14px;
+  width: calc(100% - 28px);
+  padding: 11px;
+  background: var(--navy); color: #fff;
+  border: none; border-radius: var(--r);
+  font-family: inherit;
+  font-size: 10.5px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1.3px;
+  cursor: pointer; transition: opacity 0.15s;
+}
+.label-print-btn:hover { opacity: 0.9; }
+
+/* ============ FOOTER ============ */
+.footer { margin-top: 28px; text-align: center; }
+.footer-tagline-bar {
+  background: var(--navy);
+  border-top: 3px solid var(--gold);
+  padding: 17px 20px;
+  border-radius: var(--r) var(--r) 0 0;
+}
+.footer-tagline {
+  font-size: 10.5px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 2.5px;
+  color: var(--gold);
+}
+.footer-url-bar {
+  padding: 12px 20px;
+  border: 1px solid var(--line);
+  border-top: none;
+  background: var(--surface);
+  border-radius: 0 0 var(--r) var(--r);
+}
+.footer-url { font-size: 11px; color: var(--muted); }
+.footer-url a { color: var(--navy); text-decoration: none; font-weight: 600; }
+
+/* ============ PRINT OVERLAY ============ */
+.print-overlay {
+  display: none;
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(6,14,32,0.9);
+  z-index: 999;
+  align-items: center; justify-content: center;
+  flex-direction: column; gap: 16px;
+  padding: 20px;
+}
+.print-overlay.active { display: flex; }
+.print-label-sheet {
+  background: white;
+  border: 2px solid var(--navy);
+  border-radius: var(--r);
+  overflow: hidden;
+  width: 100%; max-width: 320px;
+}
+.print-label-top {
+  background: var(--navy); padding: 12px 16px;
+  border-bottom: 2px solid var(--gold);
+  display: flex; justify-content: space-between; align-items: center;
+}
+.print-label-brand { font-size: 14px; font-weight: 900; letter-spacing: 3.5px; color: #FFFFFF; }
+.print-label-ratio { background: var(--gold); color: var(--navy); font-size: 13px; font-weight: 900; padding: 3px 10px; border-radius: var(--r); font-variant-numeric: tabular-nums; }
+.print-label-body { padding: 14px 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.print-field-name { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #8A91A8; margin-bottom: 3px; }
+.print-field-value { font-size: 14px; font-weight: 700; color: #0B1E42; font-variant-numeric: tabular-nums; }
+.print-label-footer {
+  background: #EEF0F3; border-top: 1px solid #D8DCE4;
+  padding: 8px 16px; display: flex; justify-content: space-between;
+  font-size: 10px; color: #8A91A8;
+}
+.print-overlay-btns { display: flex; gap: 10px; width: 100%; max-width: 320px; }
+.print-overlay-btn {
+  flex: 1; padding: 13px; border-radius: var(--r);
+  font-family: inherit; font-size: 12px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1px;
+  cursor: pointer; border: none; text-align: center;
+}
+.print-overlay-btn.primary { background: var(--gold); color: var(--navy); }
+.print-overlay-btn.secondary { background: rgba(255,255,255,0.15); color: white; }
+
+@media print {
+  body > *:not(.print-overlay) { display: none !important; }
+  .print-overlay { display: flex !important; position: static; background: white; padding: 0; }
+  .print-overlay-btns { display: none !important; }
+  .print-label-sheet { max-width: 100%; border: 2px solid #0B1E42; }
+}
+@media print {
+  body { background: white; }
+  .actions, .lang-toggle { display: none; }
+}
+
+.p-ref {
+  font-size: 8.5px; font-weight: 600;
+  letter-spacing: 1px; color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.product-btn.active .p-ref { color: rgba(255,255,255,0.4); }
+
+/* doc buttons: prevent wrap */
+.doc-btn { white-space: nowrap; font-size: 10px; }
+
+/* hide number spinners */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+input[type=number] { -moz-appearance: textfield; }
+
+/* accessible focus */
+button:focus-visible, a:focus-visible, input:focus-visible {
+  outline: 2px solid var(--gold); outline-offset: 1px;
+}
+
+/* desktop refinement */
+@media (min-width: 720px) {
+  .content { max-width: 560px; padding: 28px 20px; }
+  .header-top, .header-banner-inner { max-width: 560px; }
+  .header-logo { height: 50px; }
+}
+
+</style>
+</head>
+<body>
+<noscript><div style="padding:20px;font-family:sans-serif;text-align:center;background:#0B1E42;color:#fff;">This calculator requires JavaScript. Please enable it in your browser settings.</div></noscript>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-top">
+    <img class="header-logo" src="data:image/png;base64,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" alt="Apollo Professional Cleaning Systems">
+    <div class="lang-toggle">
+      <button class="active" onclick="setLang('en')">EN</button>
+      <button onclick="setLang('al')">AL</button>
+    </div>
+  </div>
+  <div class="header-banner">
+    <div class="header-banner-inner">
+      <div class="header-banner-text" id="tagline">Dilution Calculator</div>
+      <div class="header-banner-sub">Technical Reference · Rev 2.1</div>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- STEP 1 -->
+  <div class="section-head" style="margin-top:0;">
+    <div class="section-num">01</div>
+    <div class="section-title" id="lbl-step1">Select Product</div>
+  </div>
+  <div class="card">
+    <div class="product-list">
+      <button class="product-btn active" onclick="selectProduct(this,'surface')" id="pb-surface">
+        <div style="flex:1;">
+          <div id="pn-surface">Apollo Surface Cleaner Pro 200</div>
+          <div class="use-case-tag">Guest rooms · Corridors · Reception</div>
+        </div>
+        <span class="p-ref">REF ASC-200</span>
+      </button>
+      <button class="product-btn" onclick="selectProduct(this,'degreaser')" id="pb-degreaser">
+        <div style="flex:1;">
+          <div id="pn-degreaser">Apollo Heavy Duty Degreaser 40</div>
+          <div class="use-case-tag">Kitchen · Equipment · Grease traps</div>
+        </div>
+        <span class="p-ref">REF HDD-40</span>
+      </button>
+      <button class="product-btn" onclick="selectProduct(this,'bathroom')" id="pb-bathroom">
+        <div style="flex:1;">
+          <div id="pn-bathroom">Apollo Acid Descaler 30</div>
+          <div class="use-case-tag">Bathrooms · Toilets · Tiles · Fixtures</div>
+        </div>
+        <span class="p-ref">REF AAD-30</span>
+      </button>
+      <button class="product-btn" onclick="selectProduct(this,'neutral')" id="pb-neutral">
+        <div style="flex:1;">
+          <div id="pn-neutral">Apollo Neutral pH Floor Cleaner Pro 250</div>
+          <div class="use-case-tag">Lobbies · Hallways · Hard floors · Gym</div>
+        </div>
+        <span class="p-ref">REF NFC-250</span>
+      </button>
+      <button class="product-btn" onclick="selectProduct(this,'dish')" id="pb-dish">
+        <div style="flex:1;">
+          <div id="pn-dish">Apollo Dish Soap Concentrate 150</div>
+          <div class="use-case-tag">Prep sinks · Bar sinks · Manual dishwashing</div>
+        </div>
+        <span class="p-ref">REF DSC-150</span>
+      </button>
+      <button class="product-btn" onclick="selectProduct(this,'oxybleach')" id="pb-oxybleach">
+        <div style="flex:1;">
+          <div id="pn-oxybleach">Apollo Oxygen Bleach Booster 500</div>
+          <div class="use-case-tag">Stain soaking · Laundry boost · Chlorine-free</div>
+        </div>
+        <span class="p-ref">REF OXB-500</span>
+      </button>
+      <button class="product-btn" onclick="selectProduct(this,'glass')" id="pb-glass">
+        <div style="flex:1;">
+          <div id="pn-glass">Apollo Glass Cleaner Pro RTU</div>
+          <div class="use-case-tag">Windows · Mirrors · Shower screens</div>
+        </div>
+        <span class="p-ref">REF GLC-RTU</span>
+      </button>
+      <button class="product-btn" onclick="selectProduct(this,'toilet')" id="pb-toilet">
+        <div style="flex:1;">
+          <div id="pn-toilet">Apollo Toilet Cleaner RTU</div>
+          <div class="use-case-tag">Toilets · Urinals · Under-rim application</div>
+        </div>
+        <span class="p-ref">REF TLC-RTU</span>
+      </button>
+      <button class="product-btn" onclick="selectProduct(this,'laundry')" id="pb-laundry">
+        <div style="flex:1;">
+          <div id="pn-laundry">Apollo Laundry Detergent Concentrate 300</div>
+          <div class="use-case-tag">Front-load &amp; top-load washers · All fabrics</div>
+        </div>
+        <span class="p-ref">REF LND-300</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- STEP 2 -->
+
+  <div id="modeSection">
+    <div class="section-head">
+      <div class="section-num">02</div>
+      <div class="section-title" id="lbl-step2">Cleaning Mode</div>
+    </div>
+    <div class="card">
+      <div class="mode-row">
+        <button class="mode-btn active" onclick="selectMode(this,'maintenance')" id="mb-maintenance">
+          <span id="mn-maintenance">Maintenance</span>
+          <span class="ratio" id="mr-maintenance">1:100</span>
+        </button>
+        <button class="mode-btn" onclick="selectMode(this,'standard')" id="mb-standard">
+          <span id="mn-standard">Standard</span>
+          <span class="ratio" id="mr-standard">1:40</span>
+        </button>
+        <button class="mode-btn" onclick="selectMode(this,'heavy')" id="mb-heavy">
+          <span id="mn-heavy">Heavy</span>
+          <span class="ratio" id="mr-heavy">1:10</span>
+        </button>
+      </div>
+      <div class="mode-row soil-row" style="display:none;">
+        <button class="mode-btn" onclick="selectSoil(this,'light')" id="sb-light">
+          <span id="sn-light">Light</span>
+        </button>
+        <button class="mode-btn active" onclick="selectSoil(this,'normal')" id="sb-normal">
+          <span id="sn-normal">Normal</span>
+        </button>
+        <button class="mode-btn" onclick="selectSoil(this,'heavy')" id="sb-heavy">
+          <span id="sn-heavy">Heavy</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 3 -->
+  <div id="containerSection">
+    <div class="section-head">
+      <div class="section-num">03</div>
+      <div class="section-title" id="lbl-step3">Container Size</div>
+    </div>
+    <div class="card">
+      <div class="container-wrap">
+        <div class="preset-row">
+          <button class="preset-btn" onclick="setPreset(this,0.5)">500ml</button>
+          <button class="preset-btn" onclick="setPreset(this,0.75)">750ml</button>
+          <button class="preset-btn active" onclick="setPreset(this,1)">1L</button>
+          <button class="preset-btn" onclick="setPreset(this,5)">5L</button>
+          <button class="preset-btn" onclick="setPreset(this,10)">10L</button>
+        </div>
+        <div class="custom-row">
+          <input type="number" id="containerSize" value="1" min="0.1" step="0.1" oninput="onCustomInput()" placeholder="Custom">
+          <div class="unit">L</div>
+        </div>
+      </div>
+      <div class="container-wrap load-wrap" style="display:none;">
+        <div class="preset-row">
+          <button class="preset-btn" onclick="selectLoadSize(this,'small')" id="lb-small"><span id="ln-small">Small</span></button>
+          <button class="preset-btn active" onclick="selectLoadSize(this,'medium')" id="lb-medium"><span id="ln-medium">Medium</span></button>
+          <button class="preset-btn" onclick="selectLoadSize(this,'large')" id="lb-large"><span id="ln-large">Large</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RTU -->
+  <div id="rtuCard" style="display:none; margin-top:16px;">
+    <div class="rtu-card">
+      <div class="rtu-label" id="lbl-rtu">Ready to Use</div>
+      <div class="rtu-value" id="rtu-msg">No dilution needed. Use directly from the bottle.</div>
+    </div>
+  </div>
+
+
+  <!-- ANSWER -->
+  <div id="answerCard" style="margin-top:18px;">
+    <div class="answer-card">
+      <div class="answer-top">
+        <div class="answer-amount">
+          <div class="answer-eyebrow" id="lbl-answer-eyebrow">Add to your container</div>
+          <div>
+            <span class="answer-value" id="answerValue">10</span>
+            <span class="answer-unit" id="answerUnit">ml</span>
+          </div>
+        </div>
+        <div class="answer-divider-v"></div>
+        <div class="answer-context">
+          <div class="answer-context-line" id="answerContext">of concentrate</div>
+        </div>
+      </div>
+      <div class="answer-bottom">
+        <div class="answer-steps">
+          <div class="answer-step">
+            <div class="step-num">01</div>
+            <div class="step-text" id="step1text">Add <strong>10 ml</strong> of concentrate to your container.</div>
+          </div>
+          <div class="answer-step">
+            <div class="step-num">02</div>
+            <div class="step-text" id="step2text">Fill the rest with <strong>990 ml</strong> of clean water.</div>
+          </div>
+          <div class="answer-step">
+            <div class="step-num">03</div>
+            <div class="step-text" id="step3text">Close the container and shake gently to mix.</div>
+          </div>
+        </div>
+        <div class="ready-badge" id="lbl-ready">Product Ready for Application</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHAKE TIMER -->
+  <div id="shakeSection" style="margin-top:8px;">
+    <div class="shake-card" onclick="startShake()" id="shakeCard">
+      <div class="shake-label">Once mixed, tap to time your shake</div>
+      <div class="shake-btn-text" id="shakeBtnText">▶ Start 10-second shake timer</div>
+      <div class="shake-progress-wrap" id="shakeProgressWrap">
+        <div class="shake-progress-bar" id="shakeProgressBar"></div>
+      </div>
+      <div class="shake-done" id="shakeDone">✓ Ready for application</div>
+    </div>
+  </div>
+
+  <!-- WATER HARDNESS NOTE -->
+  <div id="waterSection" style="margin-top:8px;">
+    <div class="water-note">
+      <div class="water-note-title">Water Hardness Tip</div>
+      <span id="waterNoteText">Albania has varying water hardness. In hard water areas (coastal regions like Durrës), consider increasing concentrate by 10–15% for optimal cleaning performance.</span>
+    </div>
+  </div>
+
+  <!-- COST -->
+  <div id="costSection">
+    <div class="section-head">
+      <div class="section-num">·</div>
+      <div class="section-title" id="lbl-cost">Why Apollo Saves You Money</div>
+    </div>
+    <div class="savings-story">
+      <div class="savings-cpl-row">
+        <div class="savings-cpl rtu">
+          <div class="savings-cpl-label" id="lbl-cpl-rtu">RTU · Cost per litre</div>
+          <div class="savings-cpl-value" id="rtuCpl">L 180</div>
+          <div class="savings-cpl-sub" id="rtuCplSub">ready-to-use</div>
+        </div>
+        <div class="savings-cpl apollo">
+          <div class="savings-cpl-label" id="lbl-cpl-apollo">Apollo · Cost per litre</div>
+          <div class="savings-cpl-value" id="apolloCpl">L 3.6</div>
+          <div class="savings-cpl-sub" id="apolloCplSub">ready-to-use</div>
+        </div>
+      </div>
+      <div class="savings-pct-row">
+        <div>
+          <div class="savings-pct-label" id="lbl-saving-pct">Cost saving per litre</div>
+          <div class="savings-pct-sub" id="savingSubText">vs ready-to-use product</div>
+        </div>
+        <div style="text-align:right;">
+          <div class="savings-pct-value" id="savingPct">97%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COVERAGE -->
+  <div id="coverageSection">
+    <div class="section-head">
+      <div class="section-num">·</div>
+      <div class="section-title" id="lbl-coverage">Coverage Estimate</div>
+    </div>
+    <div class="coverage-card">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;">
+        <div class="coverage-text">
+          <div class="coverage-title" id="lbl-coverage-sub">This batch covers approximately</div>
+          <div class="coverage-value" id="coverageRooms">-</div>
+          <div class="coverage-sub" id="coverageSub">rooms / areas</div>
+        </div>
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#C2C7D2" stroke-width="1.5" style="flex-shrink:0;"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- PPE -->
+  <div id="ppeSection" style="margin-top:8px;">
+    <div class="ppe-card" id="ppeCard"></div>
+  </div>
+
+  <!-- DOCS -->
+  <div id="docsSection" style="display:none;">
+    <div class="section-head">
+      <div class="section-num">·</div>
+      <div class="section-title">Product Documents</div>
+    </div>
+    <div class="docs-bar">
+      <a class="doc-btn" id="sdsLink" href="#" target="_blank">
+        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Safety Data Sheet
+      </a>
+      <a class="doc-btn" id="tdsLink" href="#" target="_blank">
+        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Technical Data Sheet
+      </a>
+    </div>
+  </div>
+
+  <!-- REQUEST SAMPLE -->
+  <a class="whatsapp-btn" id="sampleBtn" href="https://wa.me/355698268889?text=Hi%2C%20I%27d%20like%20to%20request%20a%20sample%20of%20Apollo%20Surface%20Cleaner." target="_blank">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span id="sampleBtnText">Reorder · Apollo Surface Cleaner</span>
+  </a>
+
+  <!-- LABEL GENERATOR -->
+  <div id="labelSection" style="margin-bottom:8px;">
+    <div class="section-head">
+      <div class="section-num">·</div>
+      <div class="section-title">Bottle Label</div>
+    </div>
+    <div class="label-gen-card">
+      <div class="label-preview">
+        <div class="label-top">
+          <div class="label-brand">APOLLO</div>
+          <div class="label-ratio-badge" id="labelRatio">1:100</div>
+        </div>
+        <div class="label-body">
+          <div class="label-field">
+            <div class="label-field-name">Product</div>
+            <div class="label-field-value" id="labelProduct">Surface Cleaner Pro 200</div>
+          </div>
+          <div class="label-field">
+            <div class="label-field-name">Mode</div>
+            <div class="label-field-value" id="labelMode">Maintenance</div>
+          </div>
+          <div class="label-field">
+            <div class="label-field-name">Concentrate</div>
+            <div class="label-field-value" id="labelConc">10 ml</div>
+          </div>
+          <div class="label-field">
+            <div class="label-field-name">Mixed</div>
+            <div class="label-field-value" id="labelDate">-</div>
+          </div>
+        </div>
+        <div class="label-footer">
+          <span>apollocleaningsolutions.com</span>
+          <span id="labelContainer">1 L container</span>
+        </div>
+      </div>
+      <button class="label-print-btn" onclick="printLabel()">Print Label</button>
+    </div>
+  </div>
+
+  <!-- ACTIONS -->
+  <div class="actions">
+    <button class="btn btn-share" onclick="saveToHomeScreen()">
+      <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M12 2v13M8 6l4-4 4 4"/><rect x="3" y="14" width="18" height="8" rx="1"/></svg>
+      <span id="btn-save">Add to Home Screen</span>
+    </button>
+    <button class="btn btn-print" onclick="window.print()">
+      <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      <span id="btn-print">Print</span>
+    </button>
+  </div>
+
+  <div class="footer">
+    <div class="footer-tagline-bar">
+      <div class="footer-tagline">Local Production. Global Confidence.</div>
+    </div>
+    <div class="footer-url-bar">
+      <div class="footer-url">Powered by <a href="https://apollocleaningsolutions.com">apollocleaningsolutions.com</a></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- PRINT OVERLAY -->
+<div class="print-overlay" id="printOverlay">
+  <div class="print-label-sheet">
+    <div class="print-label-top">
+      <div class="print-label-brand">APOLLO</div>
+      <div class="print-label-ratio" id="printRatio">1:100</div>
+    </div>
+    <div class="print-label-body">
+      <div>
+        <div class="print-field-name">Product</div>
+        <div class="print-field-value" id="printProduct">Surface Cleaner Pro 200</div>
+      </div>
+      <div>
+        <div class="print-field-name">Mode</div>
+        <div class="print-field-value" id="printMode">Maintenance</div>
+      </div>
+      <div>
+        <div class="print-field-name">Concentrate</div>
+        <div class="print-field-value" id="printConc">10 ml</div>
+      </div>
+      <div>
+        <div class="print-field-name">Mixed on</div>
+        <div class="print-field-value" id="printDate">-</div>
+      </div>
+    </div>
+    <div class="print-label-footer">
+      <span>apollocleaningsolutions.com</span>
+      <span id="printContainer">1 L container</span>
+    </div>
+  </div>
+  <div class="print-overlay-btns">
+    <button class="print-overlay-btn primary" onclick="window.print()">Print</button>
+    <button class="print-overlay-btn secondary" onclick="closePrintOverlay()">Close</button>
+  </div>
+</div>
+
+<script>
+const PRODUCTS = {
+  surface: {
+    maintenance: 100, standard: 40, heavy: 10, rtu: false, pricePerL: 300, rtuPricePerL: 180,
+    m2PerLitre: 100,
+    uses: 'Guest rooms · Corridors · Reception · Lobbies',
+    ppe: {
+      maintenance: null,
+      standard: { en: 'Wear protective gloves when applying.', al: 'Vendosni doreza mbrojtëse gjatë aplikimit.' },
+      heavy: { en: ' Wear gloves. Ensure good ventilation in the area.', al: ' Vendosni doreza. Siguroni ajrosje të mirë.' }
+    }
+  },
+  degreaser: {
+    maintenance: 40, standard: 10, heavy: 5, rtu: false, pricePerL: 280, rtuPricePerL: 250,
+    m2PerLitre: 40,
+    uses: 'Kitchen · Equipment · Grease traps · Food prep areas',
+    ppe: {
+      maintenance: { en: 'Wear protective gloves when applying.', al: 'Vendosni doreza mbrojtëse gjatë aplikimit.' },
+      standard: { en: 'Wear protective gloves. Ensure good ventilation.', al: 'Doreza mbrojtëse dhe ajrosje e mirë e nevojshme.' },
+      heavy: { en: 'Wear protective gloves and eye protection. Use in a well-ventilated area.', al: 'Doreza mbrojtëse dhe mbrojtje për sytë. Ajrosje e mirë e nevojshme.' }
+    }
+  },
+  bathroom: {
+    maintenance: 30, standard: 15, heavy: 10, rtu: false, pricePerL: 240, rtuPricePerL: 300,
+    m2PerLitre: 30,
+    uses: 'Bathrooms · Toilets · Tiles · Fixtures · Limescale removal',
+    ppe: {
+      maintenance: { en: 'Wear protective gloves. Do not mix with other cleaning products.', al: 'Doreza mbrojtëse të nevojshme. Mos e përzieni me produkte të tjera.' },
+      standard: { en: 'Wear protective gloves. Do not mix with other chemicals.', al: 'Doreza mbrojtëse të nevojshme. Mos e përzieni me kimikate të tjera.' },
+      heavy: { en: 'Wear protective gloves and eye protection. Acid product. Do not mix with bleach or other cleaners.', al: 'Doreza mbrojtëse dhe mbrojtje për sytë. Produkt acid. Mos e përzieni me zbardhues.' }
+    }
+  },
+  glass:   { rtu: true, pricePerL: 160, rtuPricePerL: 210, m2PerLitre: 30, uses: 'Windows · Mirrors · Glass surfaces · Shower screens', ppe: { maintenance: null, standard: null, heavy: null } },
+  neutral: {
+    maintenance: 200, standard: 100, heavy: 50, rtu: false, pricePerL: 360, rtuPricePerL: 170,
+    m2PerLitre: 160,
+    uses: 'Lobbies · Hallways · Tiled floors · Hard floors · Gym areas',
+    ppe: {
+      maintenance: null,
+      standard: null,
+      heavy: { en: 'Wear protective gloves for prolonged use.', al: 'Vendosni doreza mbrojtëse për përdorim të zgjatur.' }
+    }
+  },
+  dish: {
+    maintenance: 200, standard: 100, heavy: 50, rtu: false, pricePerL: 260, rtuPricePerL: 60,
+    coverageUnitPerLitre: 40, coverageLabel: { en: 'sink fills', al: 'larje enësh' },
+    uses: 'Manual dishwashing · Prep sinks · Bar sinks',
+    ppe: { maintenance: null, standard: null, heavy: null }
+  },
+  oxybleach: {
+    maintenance: 50, standard: 20, heavy: 8, rtu: false, pricePerL: 340, rtuPricePerL: 260,
+    coverageUnitPerLitre: 1, coverageLabel: { en: 'soak loads', al: 'zhytje' },
+    coverageLabelSingular: { en: 'soak load', al: 'zhytje' },
+    uses: 'Stain soaking · Laundry boost · Chlorine-free brightening',
+    ppe: {
+      maintenance: null,
+      standard: { en: 'Wear protective gloves when handling concentrate.', al: 'Vendosni doreza mbrojtëse gjatë përdorimit.' },
+      heavy: { en: 'Wear protective gloves and eye protection. Avoid contact with coloured fabrics at high concentration.', al: 'Doreza mbrojtëse dhe mbrojtje për sytë. Shmangni kontaktin me pëlhura me ngjyra në përqendrim të lartë.' }
+    }
+  },
+  toilet: {
+    rtu: true, pricePerL: 250, rtuPricePerL: 320,
+    uses: 'Toilets · Urinals · Bowls · Under-rim application',
+    ppe: { maintenance: null, standard: null, heavy: null }
+  },
+  laundry: {
+    laundry: true,
+    doses: {
+      light:  { small: 20, medium: 30, large: 45 },
+      normal: { small: 25, medium: 35, large: 55 },
+      heavy:  { small: 35, medium: 50, large: 75 }
+    },
+    pricePerL: 300, rtuPricePerWash: 35,
+    uses: 'Front-load & top-load washers · All fabric types',
+    ppe: {
+      light: null,
+      normal: null,
+      heavy: { en: 'Wear protective gloves when handling concentrate.', al: 'Vendosni doreza mbrojtëse gjatë përdorimit.' }
+    }
+  },
+};
+
+const SOIL_LABELS = {
+  en: { light: 'Light', normal: 'Normal', heavy: 'Heavy' },
+  al: { light: 'E Lehtë', normal: 'Normale', heavy: 'E Rëndë' },
+};
+const LOAD_LABELS = {
+  en: { small: 'Small', medium: 'Medium', large: 'Large' },
+  al: { small: 'E Vogël', medium: 'Mesatare', large: 'E Madhe' },
+};
+
+const MODE_LABELS = {
+  en: { maintenance: 'Maintenance', standard: 'Standard', heavy: 'Heavy' },
+  al: { maintenance: 'Mirëmbajtje', standard: 'Standard', heavy: 'I Fortë' },
+};
+
+const T = {
+  en: {
+    tagline: 'Dilution Calculator',
+    'lbl-step1': 'Select Product',
+    'lbl-step2': 'Cleaning Mode',
+    'lbl-step3': 'Container Size',
+    'lbl-answer-eyebrow': 'Add to your container',
+    'lbl-rtu': 'Ready to Use',
+    'rtu-msg': 'No dilution needed. Use directly from the bottle.',
+    'lbl-cost': 'Why Apollo Saves You Money',
+    'lbl-cpl-apollo': 'Apollo · Cost per litre',
+    'lbl-cpl-rtu': 'RTU · Cost per litre',
+    'lbl-saving-pct': 'You save',
+    'lbl-ready': 'Product Ready for Application',
+    'mn-maintenance': 'Maintenance',
+    'mn-standard': 'Standard',
+    'mn-heavy': 'Heavy',
+    'pn-surface': 'Apollo Surface Cleaner Pro 200',
+    'pn-degreaser': 'Apollo Heavy Duty Degreaser 40',
+    'pn-bathroom': 'Apollo Acid Descaler 30',
+    'pn-glass': 'Apollo Glass Cleaner Pro RTU',
+    'pn-neutral': 'Apollo Neutral pH Floor Cleaner Pro 250',
+    'pn-dish': 'Apollo Dish Soap Concentrate 150',
+    'pn-oxybleach': 'Apollo Oxygen Bleach Booster 500',
+    'pn-toilet': 'Apollo Toilet Cleaner RTU',
+    'pn-laundry': 'Apollo Laundry Detergent Concentrate 300',
+    'rtu-badge': 'Ready to Use',
+    'lbl-coverage': 'Coverage Estimate',
+    'lbl-coverage-sub': 'This batch covers approximately',
+    'btn-share': 'Share',
+    'btn-print': 'Print',
+  },
+  al: {
+    tagline: 'Kalkulator Hollimi',
+    'lbl-step1': 'Zgjidhni Produktin',
+    'lbl-step2': 'Mënyra e Pastrimit',
+    'lbl-step3': 'Madhësia e Enës',
+    'lbl-answer-eyebrow': 'Shtoni në enën tuaj',
+    'lbl-rtu': 'Gati për Përdorim',
+    'rtu-msg': 'Nuk nevojitet hollim. Përdoreni direkt nga shishja.',
+    'lbl-cost': 'Pse Apollo Kursen',
+    'lbl-cpl-apollo': 'Apollo · Kosto për litër',
+    'lbl-cpl-rtu': 'RTU · Kosto për litër',
+    'lbl-saving-pct': 'Kurseni',
+    'lbl-ready': 'Produkti Gati për Aplikim',
+    'mn-maintenance': 'Mirëmbajtje',
+    'mn-standard': 'Standard',
+    'mn-heavy': 'I Fortë',
+    'pn-surface': 'Apollo Surface Cleaner Pro 200',
+    'pn-degreaser': 'Apollo Heavy Duty Degreaser 40',
+    'pn-bathroom': 'Apollo Acid Descaler 30',
+    'pn-glass': 'Apollo Glass Cleaner Pro RTU',
+    'pn-neutral': 'Apollo Neutral pH Floor Cleaner Pro 250',
+    'pn-dish': 'Apollo Dish Soap Concentrate 150',
+    'pn-oxybleach': 'Apollo Oxygen Bleach Booster 500',
+    'pn-toilet': 'Apollo Toilet Cleaner RTU',
+    'pn-laundry': 'Apollo Laundry Detergent Concentrate 300',
+    'rtu-badge': 'Gati për Përdorim',
+    'lbl-coverage': 'Vlerësim i Mbulimit',
+    'lbl-coverage-sub': 'Kjo sasi mbulon afërsisht',
+    'btn-share': 'Ndaj',
+    'btn-print': 'Printo',
+  }
+};
+
+let lang = 'en';
+let product = 'surface';
+let mode = 'maintenance';
+let soil = 'normal';
+let loadSize = 'medium';
+
+function setLang(l) {
+  lang = l;
+  document.querySelectorAll('.lang-toggle button').forEach((b,i) => {
+    b.classList.toggle('active', (i===0&&l==='en')||(i===1&&l==='al'));
+  });
+  Object.keys(T[l]).forEach(k => {
+    const el = document.getElementById(k);
+    if (el) el.textContent = T[l][k];
+  });
+  // Soil / load labels (laundry) aren't in the generic T dict
+  ['light','normal','heavy'].forEach(k => {
+    const el = document.getElementById(`sn-${k}`);
+    if (el) el.textContent = SOIL_LABELS[l][k];
+  });
+  ['small','medium','large'].forEach(k => {
+    const el = document.getElementById(`ln-${k}`);
+    if (el) el.textContent = LOAD_LABELS[l][k];
+  });
+  // Re-apply laundry step labels if currently viewing laundry (not part of T dict)
+  if (PRODUCTS[product] && PRODUCTS[product].laundry) {
+    document.getElementById('lbl-step2').textContent = l === 'al' ? 'Niveli i Ndotjes' : 'Soil Level';
+    document.getElementById('lbl-step3').textContent = l === 'al' ? 'Madhësia e Larjes' : 'Load Size';
+  }
+  updateModeRatios();
+  calculate();
+}
+
+function fadeIn(el) {
+  if (!el) return;
+  el.classList.add('section-fade-enter');
+  el.style.display = 'block';
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      el.classList.remove('section-fade-enter');
+    });
+  });
+}
+
+function fadeOut(el) {
+  if (!el) return;
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(8px)';
+  setTimeout(() => {
+    el.style.display = 'none';
+    el.style.opacity = '';
+    el.style.transform = '';
+  }, 220);
+}
+
+function showSection(id) {
+  const el = document.getElementById(id);
+  if (el && el.style.display === 'none') fadeIn(el);
+}
+
+function hideSection(id) {
+  const el = document.getElementById(id);
+  if (el && el.style.display !== 'none') fadeOut(el);
+}
+
+function selectProduct(btn, key) {
+  product = key;
+  document.querySelectorAll('.product-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const p = PRODUCTS[key];
+  const isRTU = !!p.rtu;
+  const isLaundry = !!p.laundry;
+  document.getElementById('modeSection').style.display = isRTU ? 'none' : 'block';
+  document.getElementById('containerSection').style.display = isRTU ? 'none' : 'block';
+  document.getElementById('answerCard').style.display = isRTU ? 'none' : 'block';
+  document.getElementById('costSection').style.display = isRTU ? 'none' : 'block';
+  document.getElementById('coverageSection').style.display = isRTU ? 'none' : 'block';
+  document.getElementById('ppeSection').style.display = isRTU ? 'none' : 'block';
+  document.getElementById('rtuCard').style.display = isRTU ? 'block' : 'none';
+
+  // Toggle dilution controls vs. laundry (soil/load) controls
+  document.querySelector('.mode-row:not(.soil-row)').style.display = isLaundry ? 'none' : 'grid';
+  document.querySelector('.soil-row').style.display = isLaundry ? 'grid' : 'none';
+  document.querySelector('.container-wrap:not(.load-wrap)').style.display = isLaundry ? 'none' : 'block';
+  document.querySelector('.load-wrap').style.display = isLaundry ? 'block' : 'none';
+  document.getElementById('lbl-step2').textContent = isLaundry
+    ? (lang === 'al' ? 'Niveli i Ndotjes' : 'Soil Level')
+    : T[lang]['lbl-step2'];
+  document.getElementById('lbl-step3').textContent = isLaundry
+    ? (lang === 'al' ? 'Madhësia e Larjes' : 'Load Size')
+    : T[lang]['lbl-step3'];
+
+  // Update SDS/TDS links
+  const sdsEl = document.getElementById('sdsLink');
+  const tdsEl = document.getElementById('tdsLink');
+  const docsSection = document.getElementById('docsSection');
+  if (sdsEl) { sdsEl.href = p.sds || '#'; sdsEl.style.display = p.sds ? 'flex' : 'none'; }
+  if (tdsEl) { tdsEl.href = p.tds || '#'; tdsEl.style.display = p.tds ? 'flex' : 'none'; }
+  if (docsSection) docsSection.style.display = (p.sds || p.tds) ? 'block' : 'none';
+
+  // Update sample request WhatsApp link
+  const productName = document.getElementById(`pn-${key}`)?.textContent || 'Apollo Product';
+  const sampleBtn = document.getElementById('sampleBtn');
+  const sampleBtnText = document.getElementById('sampleBtnText');
+  if (sampleBtn) {
+    const msg = encodeURIComponent(`Hi, I'd like to place an order for ${productName}. Please send me pricing and availability.`);
+    sampleBtn.href = `https://wa.me/355698268889?text=${msg}`;
+  }
+  if (sampleBtnText) sampleBtnText.textContent = `Reorder · ${productName}`;
+
+  // Hide bottles/shake for RTU and laundry (neither uses the water-fill + shake ritual)
+  document.getElementById('shakeSection').style.display = (isRTU || isLaundry) ? 'none' : 'block';
+  document.getElementById('waterSection').style.display = (isRTU || isLaundry) ? 'none' : 'block';
+
+  if (!isRTU && !isLaundry) {
+    updateModeRatios();
+  }
+  calculate();
+}
+
+function updateModeRatios() {
+  const p = PRODUCTS[product];
+  if (p.rtu || p.laundry) return;
+  document.getElementById('mr-maintenance').textContent = `1:${p.maintenance}`;
+  document.getElementById('mr-standard').textContent = `1:${p.standard}`;
+  document.getElementById('mr-heavy').textContent = `1:${p.heavy}`;
+}
+
+function selectMode(btn, m) {
+  mode = m;
+  document.querySelectorAll('.mode-row:not(.soil-row) .mode-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  calculate();
+}
+
+function setPreset(btn, val) {
+  document.querySelectorAll('.container-wrap:not(.load-wrap) .preset-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('containerSize').value = val;
+  calculate();
+}
+
+function onCustomInput() {
+  const inp = document.getElementById('containerSize');
+  let v = parseFloat(inp.value);
+  if (!isNaN(v)) {
+    if (v > 1000) { v = 1000; inp.value = 1000; }
+    if (v < 0) { v = 0.1; inp.value = 0.1; }
+  }
+  document.querySelectorAll('.container-wrap:not(.load-wrap) .preset-btn').forEach(b => b.classList.remove('active'));
+  calculate();
+}
+
+function selectSoil(btn, key) {
+  soil = key;
+  document.querySelectorAll('.soil-row .mode-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  calculate();
+}
+
+function selectLoadSize(btn, key) {
+  loadSize = key;
+  document.querySelectorAll('.load-wrap .preset-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  calculate();
+}
+
+// Animated counter utility
+function animateCounter(el, from, to, duration, prefix, suffix, decimals) {
+  if (!el) return;
+  const start = performance.now();
+  const diff = to - from;
+  function step(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    // Ease out cubic
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const current = from + diff * eased;
+    const formatted = decimals > 0 ? current.toFixed(decimals) : Math.round(current);
+    el.textContent = (prefix || '') + formatted + (suffix || '');
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+// Store previous values for animation
+let prevSavingPct = 0;
+let prevApolloLpl = 0;
+let prevRtuLpl = 0;
+
+function calculate() {
+  const p = PRODUCTS[product];
+  if (p.rtu) {
+    updateRtuLabel();
+    return;
+  }
+  if (p.laundry) {
+    calculateLaundry(p);
+    return;
+  }
+
+  const waterParts = p[mode];
+  const concParts = 1;
+  const totalParts = concParts + waterParts;
+  let containerL = parseFloat(document.getElementById('containerSize').value); if (!containerL || containerL <= 0) containerL = 1; if (containerL > 1000) containerL = 1000;
+  const pricePerL = PRODUCTS[product].pricePerL;
+  const rtuPrice = PRODUCTS[product].rtuPricePerL || 120;
+
+  const concMl = (concParts / totalParts) * containerL * 1000;
+  const smartRound = v => v < 100 ? Math.round(v / 5) * 5 : Math.round(v / 10) * 10;
+  const concMlRounded = smartRound(concMl);
+  const waterMlRounded = (containerL * 1000) - concMlRounded;
+  const waterLRounded = waterMlRounded / 1000;
+
+  // Big answer display
+  let displayVal, displayUnit;
+  if (concMlRounded < 1000) {
+    displayVal = concMlRounded;
+    displayUnit = 'ml';
+  } else {
+    displayVal = (concMlRounded / 1000).toFixed(1);
+    displayUnit = 'L';
+  }
+  const answerEl = document.getElementById('answerValue');
+  const targetVal = parseFloat(displayVal);
+  const currentVal = parseFloat(answerEl.textContent) || 0;
+  animateCounter(answerEl, currentVal, targetVal, 500, '', '', displayUnit === 'ml' ? 0 : 1);
+  document.getElementById('answerUnit').textContent = displayUnit;
+  const modeLabel = MODE_LABELS[lang][mode];
+  document.getElementById('answerContext').innerHTML = lang === 'al'
+    ? `koncentrat për hollim <strong>${modeLabel}</strong>`
+    : `of concentrate for a <strong>${modeLabel}</strong> clean`;
+
+  const concStr = concMlRounded < 1000 ? `${concMlRounded} ml` : `${(concMlRounded/1000).toFixed(1)} L`;
+  const waterStr = waterLRounded >= 1 ? `${waterLRounded.toFixed(2)} L` : `${Math.round(waterMlRounded)} ml`;
+
+  // Step-by-step instructions
+  if (lang === 'al') {
+    document.getElementById('step1text').innerHTML = `Shtoni <strong>${concStr}</strong> koncentrat në enë.`;
+    document.getElementById('step2text').innerHTML = `Mbushni pjesën tjetër me <strong>${waterStr}</strong> ujë të pastër.`;
+    document.getElementById('step3text').innerHTML = `Mbyllni enën dhe tundni lehtë për t'u përzier.`;
+  } else {
+    document.getElementById('step1text').innerHTML = `Add <strong>${concStr}</strong> of concentrate to your container.`;
+    document.getElementById('step2text').innerHTML = `Fill the rest with <strong>${waterStr}</strong> of clean water.`;
+    document.getElementById('step3text').innerHTML = `Close the container and shake gently to mix.`;
+  }
+
+  // Cost per litre of ready-to-use solution
+  const apolloCostPerLitre = pricePerL / (1 + waterParts); // concentrate cost spread over solution
+  const savingPct = Math.round(((rtuPrice - apolloCostPerLitre) / rtuPrice) * 100);
+
+  const apolloEl = document.getElementById('apolloCpl');
+  const rtuEl = document.getElementById('rtuCpl');
+  const pctEl = document.getElementById('savingPct');
+
+  const targetApollo = apolloCostPerLitre;
+  const targetPct = Math.max(0, savingPct);
+
+  animateCounter(apolloEl, prevApolloLpl, targetApollo, 600, 'L ', '', apolloCostPerLitre < 10 ? 1 : 0);
+  animateCounter(rtuEl, prevRtuLpl, rtuPrice, 600, 'L ', '', 0);
+  animateCounter(pctEl, prevSavingPct, targetPct, 700, '', '%', 0);
+
+  prevApolloLpl = targetApollo;
+  prevRtuLpl = rtuPrice;
+  prevSavingPct = targetPct;
+
+  const subText = lang === 'al' ? 'kursim për çdo litër tretësirë gati-për-përdorim' : 'less per litre vs buying ready-to-use';
+  document.getElementById('savingSubText').textContent = subText;
+
+  // Update bottle label
+  const p2 = PRODUCTS[product];
+  const waterP = p2[mode];
+  document.getElementById('labelRatio').textContent = `1:${waterP}`;
+  const productNameShort = document.getElementById(`pn-${product}`)?.textContent || 'Apollo Product';
+  document.getElementById('labelProduct').textContent = productNameShort.replace('Apollo ', '');
+  document.getElementById('labelMode').textContent = MODE_LABELS[lang][mode];
+  document.getElementById('labelConc').textContent = concStr;
+  document.getElementById('labelContainer').textContent = `${containerL} L container`;
+  document.getElementById('labelDate').textContent = new Date().toLocaleDateString('en-GB');
+
+
+  // Coverage
+  const cov = computeCoverage(p, containerL, lang);
+  document.getElementById('coverageRooms').textContent = cov.value;
+  document.getElementById('coverageSub').textContent = cov.sub;
+
+  // PPE: green for safe, yellow for maintenance/standard, red for heavy
+  const ppeData = p.ppe ? p.ppe[mode] : null;
+  const ppeCard = document.getElementById('ppeCard');
+  if (ppeData) {
+    const isHeavy = mode === 'heavy';
+    const cardClass = isHeavy ? 'ppe-card danger' : 'ppe-card warning';
+    const labelClass = isHeavy ? 'ppe-label danger-label' : 'ppe-label warning-label';
+    const labelText = isHeavy
+      ? (lang === 'al' ? 'KUJDES I LARTË' : 'CAUTION')
+      : (lang === 'al' ? 'KUJDES' : 'SAFETY NOTE');
+    ppeCard.className = cardClass;
+    ppeCard.innerHTML = '<span class="' + labelClass + '">' + labelText + '</span> ' + ppeData[lang];
+    document.getElementById('ppeSection').style.display = 'block';
+  } else {
+    ppeCard.className = 'ppe-card safe';
+    ppeCard.innerHTML = lang === 'al'
+      ? '<span class="ppe-label safe-label">SIGURI</span> Nuk nevojitet pajisje mbrojtëse për këtë mënyrë hollimi.'
+      : '<span class="ppe-label safe-label">SAFETY</span> No protective equipment required for this dilution mode.';
+    document.getElementById('ppeSection').style.display = 'block';
+  }
+}
+
+function computeCoverage(p, containerL, lang) {
+  if (p.coverageUnitPerLitre) {
+    const totalUnits = Math.max(1, Math.round(p.coverageUnitPerLitre * containerL));
+    const labelSet = p.coverageLabel ? p.coverageLabel[lang] : (lang === 'al' ? 'njësi' : 'units');
+    const singularSet = p.coverageLabelSingular ? p.coverageLabelSingular[lang] : labelSet;
+    const unitLabel = totalUnits === 1 ? singularSet : labelSet;
+    return {
+      value: `${totalUnits} ${unitLabel}`,
+      sub: lang === 'al'
+        ? `bazuar në ~${p.coverageUnitPerLitre} ${labelSet} për litër`
+        : `based on ~${p.coverageUnitPerLitre} ${labelSet} per litre`
+    };
+  }
+  const m2PerL = p.m2PerLitre || 15;
+  const totalM2 = m2PerL * containerL;
+  const rooms = Math.max(1, Math.round(totalM2 / 50));
+  const roomsText = rooms === 1
+    ? (lang === 'al' ? '1 dhomë / zonë' : '1 room / area')
+    : (lang === 'al' ? `${rooms} dhoma / zona` : `${rooms} rooms / areas`);
+  return {
+    value: roomsText,
+    sub: lang === 'al' ? `bazuar në ~${m2PerL} m² për litër` : `based on ~${m2PerL} m² per litre`
+  };
+}
+
+function calculateLaundry(p) {
+  const dose = p.doses[soil][loadSize];
+  const soilLabel = SOIL_LABELS[lang][soil];
+  const loadLabel = LOAD_LABELS[lang][loadSize];
+
+  // Big answer display
+  const answerEl = document.getElementById('answerValue');
+  const currentVal = parseFloat(answerEl.textContent) || 0;
+  animateCounter(answerEl, currentVal, dose, 500, '', '', 0);
+  document.getElementById('answerUnit').textContent = 'ml';
+  document.getElementById('lbl-answer-eyebrow').textContent = lang === 'al'
+    ? 'Shtoni në sirtarin e detergjentit'
+    : 'Add to detergent drawer';
+  document.getElementById('answerContext').innerHTML = lang === 'al'
+    ? `koncentrat për ngarkesë <strong>${loadLabel}</strong>, ndotje <strong>${soilLabel}</strong>`
+    : `of concentrate for a <strong>${loadLabel}</strong> load, <strong>${soilLabel}</strong> soil`;
+
+  if (lang === 'al') {
+    document.getElementById('step1text').innerHTML = `Shtoni <strong>${dose} ml</strong> koncentrat në sirtarin e detergjentit.`;
+    document.getElementById('step2text').innerHTML = `Ngarkoni makinën për një larje <strong>${loadLabel}</strong>.`;
+    document.getElementById('step3text').innerHTML = `Filloni ciklin normal të larjes.`;
+  } else {
+    document.getElementById('step1text').innerHTML = `Add <strong>${dose} ml</strong> of concentrate to the detergent drawer.`;
+    document.getElementById('step2text').innerHTML = `Load the machine for a <strong>${loadLabel}</strong> wash.`;
+    document.getElementById('step3text').innerHTML = `Run a normal wash cycle.`;
+  }
+
+  // Cost per wash vs. store-bought detergent
+  const apolloCostPerWash = (dose / 1000) * p.pricePerL;
+  const rtuCostPerWash = p.rtuPricePerWash || 35;
+  const savingPct = Math.max(0, Math.round(((rtuCostPerWash - apolloCostPerWash) / rtuCostPerWash) * 100));
+
+  document.getElementById('lbl-cpl-apollo').textContent = lang === 'al' ? 'Apollo · kosto për larje' : 'Apollo · cost per wash';
+  document.getElementById('lbl-cpl-rtu').textContent = lang === 'al' ? 'Detergjent tregtar · kosto për larje' : 'Store-bought · cost per wash';
+
+  animateCounter(document.getElementById('apolloCpl'), prevApolloLpl, apolloCostPerWash, 600, 'L ', '', apolloCostPerWash < 10 ? 1 : 0);
+  animateCounter(document.getElementById('rtuCpl'), prevRtuLpl, rtuCostPerWash, 600, 'L ', '', 0);
+  animateCounter(document.getElementById('savingPct'), prevSavingPct, savingPct, 700, '', '%', 0);
+  prevApolloLpl = apolloCostPerWash;
+  prevRtuLpl = rtuCostPerWash;
+  prevSavingPct = savingPct;
+
+  document.getElementById('savingSubText').textContent = lang === 'al'
+    ? 'kursim për çdo larje krahasuar me detergjent tregtar'
+    : 'less per wash vs store-bought detergent';
+
+  // Coverage: washes per litre of concentrate
+  const washesPerL = Math.max(1, Math.round(1000 / dose));
+  document.getElementById('coverageRooms').textContent = lang === 'al' ? `${washesPerL} larje` : `${washesPerL} washes`;
+  document.getElementById('coverageSub').textContent = lang === 'al'
+    ? 'nga çdo litër koncentrat'
+    : 'from every litre of concentrate';
+
+  // Bottle label
+  const nameShort = (document.getElementById('pn-laundry')?.textContent || 'Apollo Laundry Detergent').replace('Apollo ', '');
+  document.getElementById('labelRatio').textContent = `${dose} ml`;
+  document.getElementById('labelProduct').textContent = nameShort;
+  document.getElementById('labelMode').textContent = `${loadLabel} / ${soilLabel}`;
+  document.getElementById('labelConc').textContent = `${dose} ml`;
+  document.getElementById('labelContainer').textContent = lang === 'al' ? 'Larje me makinë' : 'Machine wash';
+  document.getElementById('labelDate').textContent = new Date().toLocaleDateString('en-GB');
+
+  // PPE by soil level
+  const ppeData = p.ppe ? p.ppe[soil] : null;
+  const ppeCard = document.getElementById('ppeCard');
+  if (ppeData) {
+    const isHeavy = soil === 'heavy';
+    ppeCard.className = isHeavy ? 'ppe-card danger' : 'ppe-card warning';
+    const labelClass = isHeavy ? 'ppe-label danger-label' : 'ppe-label warning-label';
+    const labelText = isHeavy
+      ? (lang === 'al' ? 'KUJDES I LARTË' : 'CAUTION')
+      : (lang === 'al' ? 'KUJDES' : 'SAFETY NOTE');
+    ppeCard.innerHTML = '<span class="' + labelClass + '">' + labelText + '</span> ' + ppeData[lang];
+  } else {
+    ppeCard.className = 'ppe-card safe';
+    ppeCard.innerHTML = lang === 'al'
+      ? '<span class="ppe-label safe-label">SIGURI</span> Nuk nevojitet pajisje mbrojtëse shtesë.'
+      : '<span class="ppe-label safe-label">SAFETY</span> No additional protective equipment required.';
+  }
+  document.getElementById('ppeSection').style.display = 'block';
+}
+
+function updateRtuLabel() {
+  const productName = document.getElementById(`pn-${product}`)?.textContent || 'Apollo Product';
+  const shortName = productName.replace('Apollo ', '');
+  const rtuText = lang === 'al' ? 'GATI PËR PËRDORIM' : 'READY TO USE';
+
+  document.getElementById('labelRatio').textContent = rtuText;
+  document.getElementById('labelProduct').textContent = shortName;
+  document.getElementById('labelMode').textContent = '-';
+  document.getElementById('labelConc').textContent = lang === 'al' ? 'Pa hollim' : 'No dilution';
+  document.getElementById('labelContainer').textContent = shortName;
+  document.getElementById('labelDate').textContent = new Date().toLocaleDateString('en-GB');
+}
+
+let shakeTimer = null;
+function startShake() {
+  const card = document.getElementById('shakeCard');
+  const btnText = document.getElementById('shakeBtnText');
+  const progressWrap = document.getElementById('shakeProgressWrap');
+  const progressBar = document.getElementById('shakeProgressBar');
+  const doneMsg = document.getElementById('shakeDone');
+
+  if (shakeTimer) return; // already running
+
+  const duration = 10000; // 10 seconds
+  const start = Date.now();
+
+  btnText.textContent = lang === 'al' ? 'Duke tundur...' : 'Shaking...';
+  progressWrap.style.display = 'block';
+  doneMsg.style.display = 'none';
+  progressBar.style.width = '0%';
+
+  shakeTimer = setInterval(() => {
+    const elapsed = Date.now() - start;
+    const remaining = Math.ceil((duration - elapsed) / 1000);
+    const pct = Math.min((elapsed / duration) * 100, 100);
+    progressBar.style.width = pct + '%';
+    btnText.textContent = lang === 'al' ? `Duke tundur... ${remaining}s` : `Shaking... ${remaining}s`;
+
+    if (elapsed >= duration) {
+      clearInterval(shakeTimer);
+      shakeTimer = null;
+      btnText.textContent = lang === 'al' ? '▶ Tundni përsëri' : '▶ Shake again';
+      doneMsg.style.display = 'block';
+      progressBar.style.width = '100%';
+    }
+  }, 100);
+}
+
+
+// ---- PWA manifest (runtime blob injection keeps this app single-file) ----
+(function () {
+  try {
+    var appleIcon = document.querySelector('link[rel="apple-touch-icon"]').href;
+    var manifest = {
+      name: 'Apollo Dilution Calculator',
+      short_name: 'Apollo Dilution',
+      description: 'Professional concentrate dosing tool by Apollo Professional Cleaning Systems.',
+      start_url: location.pathname + location.search,
+      scope: location.pathname.substring(0, location.pathname.lastIndexOf('/') + 1) || '/',
+      display: 'standalone',
+      background_color: '#FFFFFF',
+      theme_color: '#0B1E42',
+      icons: [{ src: appleIcon, sizes: '180x180', type: 'image/png', purpose: 'any' }]
+    };
+    var blob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
+    var link = document.createElement('link');
+    link.rel = 'manifest';
+    link.href = URL.createObjectURL(blob);
+    document.head.appendChild(link);
+  } catch (e) { /* non-fatal */ }
+})();
+
+let deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+});
+
+function saveToHomeScreen() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(() => { deferredPrompt = null; });
+  } else {
+    // Fallback instructions for iOS or already installed
+    const btn = document.getElementById('btn-save');
+    const orig = btn.textContent;
+    const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+    if (isIOS) {
+      btn.textContent = lang === 'al' ? 'Shtyp Share → Shto' : 'Tap Share → Add to Home';
+    } else {
+      btn.textContent = lang === 'al' ? 'Shto nga menyja e browser' : 'Use browser menu to install';
+    }
+    setTimeout(() => btn.textContent = orig, 3000);
+  }
+}
+
+function printLabel() {
+  document.getElementById('printRatio').textContent = document.getElementById('labelRatio').textContent;
+  document.getElementById('printProduct').textContent = document.getElementById('labelProduct').textContent;
+  document.getElementById('printMode').textContent = document.getElementById('labelMode').textContent;
+  document.getElementById('printConc').textContent = document.getElementById('labelConc').textContent;
+  document.getElementById('printContainer').textContent = document.getElementById('labelContainer').textContent;
+  document.getElementById('printDate').textContent = document.getElementById('labelDate').textContent;
+  document.getElementById('printOverlay').classList.add('active');
+}
+
+function closePrintOverlay() {
+  document.getElementById('printOverlay').classList.remove('active');
+}
+
+function loadFromURL() {
+  const params = new URLSearchParams(location.search);
+  const P = params.get('p'), M = params.get('m'), V = params.get('v'), S = params.get('s'), L = params.get('l'), LG = params.get('lang');
+  if (LG === 'al' || LG === 'en') setLang(LG);
+  if (P && PRODUCTS[P]) { const el = document.getElementById(`pb-${P}`); if (el) selectProduct(el, P); }
+  if (M && ['maintenance','standard','heavy'].includes(M)) { const el = document.getElementById(`mb-${M}`); if (el) selectMode(el, M); }
+  if (S && ['light','normal','heavy'].includes(S)) { const el = document.getElementById(`sb-${S}`); if (el) selectSoil(el, S); }
+  if (L && ['small','medium','large'].includes(L)) { const el = document.getElementById(`lb-${L}`); if (el) selectLoadSize(el, L); }
+  if (V && !isNaN(parseFloat(V))) { document.getElementById('containerSize').value = Math.min(1000, Math.max(0.1, parseFloat(V))); }
+}
+
+loadFromURL();
+updateModeRatios();
+calculate();
+
+</script>
+</body>
+</html>
